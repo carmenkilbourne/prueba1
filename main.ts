@@ -142,6 +142,12 @@ await client.connect();
         }
 
     }
+    if(method === "DELETE"){
+        if(PATH === "/user"){
+            const users = await req.json();
+            
+        }
+    }
 
     return new Response("No endpoint",{status:404});
 
